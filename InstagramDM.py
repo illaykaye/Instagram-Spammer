@@ -2,6 +2,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.chrome.options import Options
 
+webdriver_path = input("Enter your Chrome WebDriver path: ")
 from_username = input("Enter the user name to send from: ")
 from_user_password = input("Enter the user password: ")
 
@@ -12,7 +13,7 @@ num = int(input("How many times send the message? "))
 # Create WebDriver
 chrome_options = Options()
 chrome_options.add_argument("maximized")
-driver = webdriver.Chrome(r"Enter your chrome WebDriver path here",
+driver = webdriver.Chrome(webdriver_path,
                           options=chrome_options)
 try:
     driver.get('https://www.instagram.com/')
