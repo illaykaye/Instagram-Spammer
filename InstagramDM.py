@@ -12,7 +12,7 @@ num = int(input("How many times send the message? "))
 # Create WebDriver
 chrome_options = Options()
 chrome_options.add_argument("maximized")
-driver = webdriver.Chrome(r"C:\Users\illay\Programming\chromedriver.exe",
+driver = webdriver.Chrome(r"Enter your chrome WebDriver path here",
                           options=chrome_options)
 try:
     driver.get('https://www.instagram.com/')
